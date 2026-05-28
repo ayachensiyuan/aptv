@@ -1,0 +1,115 @@
+#EXTM3U x-tvg-url="https://iptv-org.github.io/epg/index.xml"
+
+# ============================================================
+# IPTV Playlist - 香港 / 台湾 / 美国 / 日本 / 动漫 / 世界新闻
+# Sources: iptv-org (https://github.com/iptv-org/iptv) - public streams
+# Note: Stream availability may change over time. If a channel
+#       stops working, check https://iptv-org.github.io/ for an
+#       updated URL.
+# ============================================================
+
+# -------------------- 香港 (Hong Kong) --------------------
+#EXTINF:-1 tvg-id="TVB.hk" tvg-logo="https://i.imgur.com/0pZ3Q6c.png" group-title="香港",TVB 翡翠台 (TVB Jade)
+https://stmv1.srvif.com/tvbjade/tvbjade/playlist.m3u8
+#EXTINF:-1 tvg-id="TVBPearl.hk" group-title="香港",TVB 明珠台 (TVB Pearl)
+https://stmv1.srvif.com/tvbpearl/tvbpearl/playlist.m3u8
+#EXTINF:-1 tvg-id="iCableNews.hk" group-title="香港",有線新聞 (i-CABLE News)
+https://livednstxr.i-cable.com/Channel/news/playlist.m3u8
+#EXTINF:-1 tvg-id="NowNews.hk" group-title="香港",Now 新聞台
+https://d3goixb329rh4j.cloudfront.net/news/index.m3u8
+#EXTINF:-1 tvg-id="RTHK31.hk" group-title="香港",港台電視 31 (RTHK 31)
+https://stream.rthk.hk/livetv/tv31_master.m3u8
+#EXTINF:-1 tvg-id="RTHK32.hk" group-title="香港",港台電視 32 (RTHK 32)
+https://stream.rthk.hk/livetv/tv32_master.m3u8
+#EXTINF:-1 tvg-id="HOYTV.hk" group-title="香港",HOY TV 開電視
+https://hoytv-live.akamaized.net/hls/live/2105050/hoytv77/index.m3u8
+#EXTINF:-1 tvg-id="HOYInfo.hk" group-title="香港",HOY 資訊台
+https://hoytv-live.akamaized.net/hls/live/2105050/hoy76/index.m3u8
+
+# -------------------- 台灣 (Taiwan) --------------------
+#EXTINF:-1 tvg-id="PTSHD.tw" group-title="台灣",公視 PTS HD
+https://pts-cd.cdn.hinet.net/livecdn/pts1ch.m3u8
+#EXTINF:-1 tvg-id="PTS3.tw" group-title="台灣",公視 3 台
+https://pts-cd.cdn.hinet.net/livecdn/pts3ch.m3u8
+#EXTINF:-1 tvg-id="HakkaTV.tw" group-title="台灣",客家電視台
+https://pts-cd.cdn.hinet.net/livecdn/hakkach.m3u8
+#EXTINF:-1 tvg-id="TaiwanPlusNews.tw" group-title="台灣",TaiwanPlus News
+https://taiwanplus-live.akamaized.net/hls/live/2036115/TaiwanPlusNews/master.m3u8
+#EXTINF:-1 tvg-id="TaiwanPlus.tw" group-title="台灣",TaiwanPlus
+https://taiwanplus-live.akamaized.net/hls/live/2036114/TaiwanPlus/master.m3u8
+#EXTINF:-1 tvg-id="EBCNews.tw" group-title="台灣",東森新聞 (EBC News)
+https://ebcudplive.akamaized.net/pool_904/Live_1/ebcnews/index.m3u8
+#EXTINF:-1 tvg-id="FTV.tw" group-title="台灣",民視新聞 (FTV News)
+https://ftvlivehls.ftv.com.tw/live8K/ftvnewsHigh.m3u8
+#EXTINF:-1 tvg-id="SETNews.tw" group-title="台灣",三立新聞 (SET News)
+https://setn-live.cdn.hinet.net/live/setnews/playlist.m3u8
+
+# -------------------- 美國 (USA) --------------------
+#EXTINF:-1 tvg-id="ABCNewsLive.us" group-title="美國",ABC News Live
+https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8
+#EXTINF:-1 tvg-id="CBSNews.us" group-title="美國",CBS News
+https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
+#EXTINF:-1 tvg-id="NBCNews.us" group-title="美國",NBC News NOW
+https://nbcnews2.akamaized.net/hls/live/723426/NBCNewsPlaymaker24x7Linear/master.m3u8
+#EXTINF:-1 tvg-id="Bloomberg.us" group-title="美國",Bloomberg TV
+https://bloomberg.com/media-manifest/streams/us.m3u8
+#EXTINF:-1 tvg-id="FoxWeather.us" group-title="美國",Fox Weather
+https://fwn-tubi.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="USAToday.us" group-title="美國",USA Today
+https://usatoday-gambit.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="ABCNewsLive2.us" group-title="美國",ABC News Live (Backup)
+https://abcnews-amd.akamaized.net/hls/live/2042630/abcnews/master.m3u8
+
+# -------------------- 日本 (Japan) --------------------
+#EXTINF:-1 tvg-id="NHKWorldJapan.jp" group-title="日本",NHK World Japan
+https://nhkwlive-ojp.akamaized.net/hls/live/2003459/nhkwlive-ojp-en/index_4M.m3u8
+#EXTINF:-1 tvg-id="NHKWorldPremium.jp" group-title="日本",NHK World Premium
+https://nhkwlive-ojp.akamaized.net/hls/live/2003458/nhkwlive-ojp/index_4M.m3u8
+#EXTINF:-1 tvg-id="JapanetTakata.jp" group-title="日本",ジャパネットたかた (Japanet Takata)
+https://hls.japanet.tv/Live/Channel-01/master.m3u8
+#EXTINF:-1 tvg-id="FujiNewsNetwork.jp" group-title="日本",FNN Prime Online
+https://lpt.c.nmdn.net/ipbb/HLS_GHKaTV1_high/index.m3u8
+#EXTINF:-1 tvg-id="TokyoMX.jp" group-title="日本",TOKYO MX
+https://mxlive.akamaized.net/hls/live/2003411/mxlive/index.m3u8
+
+# -------------------- 日本動漫 (Anime) --------------------
+#EXTINF:-1 tvg-id="AnimeKuro.us" group-title="動漫",Anime Kuro (Plex)
+https://anime-kuro-plex.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="AsianCrushAnime.us" group-title="動漫",AsianCrush Anime
+https://asiancrush-roku.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="RetroAnime.us" group-title="動漫",Retro Anime (Plex)
+https://retro-anime-plex.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="AnimeAllDay.us" group-title="動漫",Anime All Day (Plex)
+https://anime-all-day-plex.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="DustX.us" group-title="動漫",Dust X (Sci-fi/Anime style)
+https://dust-x-plex.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="ConTV.us" group-title="動漫",ConTV Anime
+https://contvanime-samsungus.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="MidnightPulpAnime.us" group-title="動漫",Midnight Pulp
+https://midnightpulp-samsungus.amagi.tv/playlist.m3u8
+
+# -------------------- 世界新聞 (World News) --------------------
+#EXTINF:-1 tvg-id="DWEnglish.de" group-title="世界新聞",DW News (English)
+https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
+#EXTINF:-1 tvg-id="DWDeutsch.de" group-title="世界新聞",DW Deutsch
+https://dwamdstream101.akamaized.net/hls/live/2015524/dwstream101/index.m3u8
+#EXTINF:-1 tvg-id="FRANCE24English.fr" group-title="世界新聞",France 24 English
+https://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8
+#EXTINF:-1 tvg-id="FRANCE24Francais.fr" group-title="世界新聞",France 24 Français
+https://static.france24.com/live/F24_FR_LO_HLS/live_web.m3u8
+#EXTINF:-1 tvg-id="EuronewsEnglish.fr" group-title="世界新聞",Euronews English
+https://euronews-euronews-english-2-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="AlJazeeraEnglish.qa" group-title="世界新聞",Al Jazeera English
+https://live-hls-web-aje.getaj.net/AJE/index.m3u8
+#EXTINF:-1 tvg-id="AlJazeeraArabic.qa" group-title="世界新聞",Al Jazeera Arabic
+https://live-hls-web-aja.getaj.net/AJA/index.m3u8
+#EXTINF:-1 tvg-id="CNAEnglish.sg" group-title="世界新聞",CNA (Channel News Asia)
+https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f4cdeb44e62cc6f1b94b6/index.m3u8
+#EXTINF:-1 tvg-id="TRTWorld.tr" group-title="世界新聞",TRT World
+https://tv-trtworld.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="ArirangTV.kr" group-title="世界新聞",Arirang TV (Korea)
+https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="CGTNEnglish.cn" group-title="世界新聞",CGTN English
+https://news.cgtn.com/resource/live/english/cgtn-news.m3u8
+#EXTINF:-1 tvg-id="RT.ru" group-title="世界新聞",RT News (English)
+https://rt-glb.rttv.com/live/rtnews/playlist.m3u8
