@@ -1,10 +1,13 @@
 #EXTM3U x-tvg-url="https://iptv-org.github.io/epg/index.xml"
 
 # ============================================================
-# IPTV Playlist - 央视 / 卫视 / 上海 / 香港 / 台灣 / 美國 / 日本 / 動漫 / 世界新聞
+# IPTV Playlist - 央视 / 卫视 / 少兒 / 上海 / 香港 / 台灣 / 美國 / 日本 / 動漫 / 世界新聞
 # Last refresh : 2026-05-28
 # Sources      :
-#   - westlife219/iptv-sources  (CCTV + 卫视 HD)
+#   - westlife219/iptv-sources  (CCTV + 卫视 HD, 少兒)
+#     * elder-cable-tv.m3u
+#     * wangbin-hk-tw.m3u
+#     * elder.m3u, wangbin.m3u
 #   - Ftindy/IPTV-URL           (上海 BesTV)
 #   - kimwang1978/collect-txt   (上海频道 + 港澳台 fallbacks)
 #   - iptv.catvod.com           (gateway for 港台 + 海外 channels)
@@ -108,6 +111,12 @@ https://iptv.catvod.com/catvod.php?id=xjws
 #EXTINF:-1 tvg-id="西藏卫视.cn" tvg-logo="https://tb.zbds.top/logo/西藏卫视.png" group-title="卫视",西藏卫视
 https://iptv.catvod.com/catvod.php?id=xzws
 
+# -------------------- 少兒 (Kids) --------------------
+#EXTINF:-1 tvg-id="金鹰卡通.cn" tvg-logo="https://tb.zbds.top/logo/金鹰卡通.png" group-title="少兒",金鹰卡通
+http://183.11.239.36:808/hls/69/index.m3u8
+#EXTINF:-1 tvg-id="卡酷少儿.cn" tvg-logo="https://tb.zbds.top/logo/卡酷少儿.png" group-title="少兒",卡酷少儿
+http://218.13.170.98:9901/tsfile/live/1021_1.m3u8
+
 # -------------------- 上海 (Shanghai) --------------------
 #EXTINF:-1 tvg-id="上海新闻综合.cn" tvg-logo="https://live.fanmingming.cn/tv/上海新闻综合.png" group-title="上海",上海新闻综合
 https://stream1.freetv.fun/ipv6-shang-hai-xin-wen-zong-he-3.m3u8
@@ -149,6 +158,10 @@ https://iptv.catvod.com/catvod.php?id=rthk32
 http://php.jdshipin.com/TVOD/iptv.php?id=hoytv
 #EXTINF:-1 tvg-id="HOYInfo.hk" group-title="香港",HOY 資訊台
 https://iptv.catvod.com/catvod.php?id=hoy78
+#EXTINF:-1 tvg-id="HKS.hk" tvg-logo="https://www.xn--rgv465a.top/tvlogo/香港卫视.png" group-title="香港",香港衛視
+https://stream1.freetv.fun/5335c88a9a7d8b74173b491f480d4f94e8d3bd596af54478106aa2399e6c7917.m3u8
+#EXTINF:-1 tvg-id="PhoenixInfo.hk" tvg-logo="https://www.xn--rgv465a.top/tvlogo/凤凰资讯.png" group-title="香港",鳳凰資訊
+http://61.221.215.25:8800/hls/47/index.m3u8
 
 # -------------------- 台灣 (Taiwan) --------------------
 #EXTINF:-1 tvg-id="PTSHD.tw" group-title="台灣",公視 PTS HD
@@ -167,6 +180,22 @@ http://38.64.72.148/hls/modn/list/2015/playlist.m3u8
 http://38.64.72.148/hls/modn/list/4012/playlist.m3u8
 #EXTINF:-1 tvg-id="SETNews.tw" group-title="台灣",三立新聞 (SET News)
 https://stream1.freetv.fun/san-li-xin-wen-4.m3u8
+#EXTINF:-1 tvg-id="TVBSAsia.tw" tvg-logo="https://www.xn--rgv465a.top/tvlogo/TVBS亚洲.png" group-title="台灣",TVBS 亞洲
+http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
+#EXTINF:-1 tvg-id="SETTaiwan.tw" tvg-logo="https://www.xn--rgv465a.top/tvlogo/三立台湾.png" group-title="台灣",三立台灣台
+https://stream1.freetv.fun/san-li-tai-wan-1.ctv
+#EXTINF:-1 tvg-id="VLSports.tw" tvg-logo="https://www.xn--rgv465a.top/tvlogo/纬来体育.png" group-title="台灣",緯來體育
+https://epg.pw/stream/ab6df63b64d0cc44a1f4f029ed847a26fa54a7aebd455578fb05a63f02c22f4b.m3u8
+#EXTINF:-1 tvg-id="EBCSuper.tw" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东森超视.png" group-title="台灣",東森超視
+https://stream1.freetv.fun/dong-sen-chao-shi-4.m3u8
+#EXTINF:-1 tvg-id="EBCMovies.tw" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东森电影.png" group-title="台灣",東森電影
+https://stream1.freetv.fun/dong-sen-dian-ying-8.ctv
+#EXTINF:-1 tvg-id="EBCWestern.tw" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东森洋片.png" group-title="台灣",東森洋片
+https://stream1.freetv.fun/dong-sen-yang-pian-3.m3u8
+#EXTINF:-1 tvg-id="JingTianInfo.tw" tvg-logo="https://www.xn--rgv465a.top/tvlogo/靖天资讯.png" group-title="台灣",靖天資訊
+https://stream1.freetv.fun/jing-tian-zi-xun-2.ctv
+#EXTINF:-1 tvg-id="BLTV.tw" group-title="台灣",美好生活 (BLTV)
+https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
 
 # -------------------- 美國 (USA) --------------------
 #EXTINF:-1 tvg-id="ABCNewsLive.us" group-title="美國",ABC News Live
