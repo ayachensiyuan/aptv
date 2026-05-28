@@ -1,70 +1,176 @@
 #EXTM3U x-tvg-url="https://iptv-org.github.io/epg/index.xml"
 
 # ============================================================
-# IPTV Playlist - 香港 / 台灣 / 美國 / 日本 / 動漫 / 世界新聞
-# Last refresh : 2026-05-28 (URLs cross-checked against iptv-org JSON API)
-# Sources      : https://iptv-org.github.io/iptv/ · channels.json + streams.json
-# Note         : Stream availability changes frequently. If a channel
-#                fails, look it up at https://iptv-org.github.io/ for
-#                an updated URL.
-#
-# Channels that could NOT be auto-refreshed (kept original URLs;
-# they may need a manual replacement - iptv-org does not list them
-# any more, usually for copyright/geo-blocking reasons):
-#   - TVB 翡翠台 / TVB 明珠台 (HK)
-#   - 有線新聞 i-CABLE News (HK)
-#   - Now 新聞台 (HK)
-#   - 公視 PTS HD / 公視 3 台 (TW)
-#   - 客家電視台 (TW)
-#   - TaiwanPlus News (TW)
-#   - 東森新聞 EBC / 民視 FTV / 三立 SET News (TW)
-#         (iptv-org only has unreliable seb.sason.top mirror - skipped)
-#   - TOKYO MX (JP) - only iptv-org option is geo-restricted mirror
-#   - FNN Prime Online / ジャパネットたかた (JP)
-#   - DW Deutsch (DE) - original DW Akamai CDN URL kept
-#   - Anime Kuro / Retro Anime / ConTV Anime (US)
-#         (Plex/Samsung Amagi feeds removed from iptv-org)
+# IPTV Playlist - 央视 / 卫视 / 上海 / 香港 / 台灣 / 美國 / 日本 / 動漫 / 世界新聞
+# Last refresh : 2026-05-28
+# Sources      :
+#   - westlife219/iptv-sources  (CCTV + 卫视 HD)
+#   - Ftindy/IPTV-URL           (上海 BesTV)
+#   - kimwang1978/collect-txt   (上海频道 + 港澳台 fallbacks)
+#   - iptv.catvod.com           (gateway for 港台 + 海外 channels)
+#   - iptv-org/iptv             (US / DE / FR / Al Jazeera / etc.)
+# Removed      : Plex/Samsung 'Anime Kuro / Retro Anime / ConTV' feeds
+#                (vendor took them down); Japanet Takata (no live mirror)
+# Notes        : Use an IPTV-aware player (VLC / PotPlayer / IINA). Some
+#                US/JP Akamai links are geo-restricted but kept for users
+#                in those regions; substitute with a regional CDN as needed.
 # ============================================================
 
+# -------------------- 央视 (CCTV HD) --------------------
+#EXTINF:-1 tvg-id="CCTV1.cn" tvg-logo="https://tb.zbds.top/logo/CCTV1.png" group-title="央视",CCTV-1 综合
+http://74.91.26.218:82/live/cctv1hd.m3u8
+#EXTINF:-1 tvg-id="CCTV2.cn" tvg-logo="https://tb.zbds.top/logo/CCTV2.png" group-title="央视",CCTV-2 财经
+http://38.75.136.137:98/gslb/dsdqbv/cctv2hd.m3u8?auth=test20251009
+#EXTINF:-1 tvg-id="CCTV3.cn" tvg-logo="https://tb.zbds.top/logo/CCTV3.png" group-title="央视",CCTV-3 综艺
+http://74.91.26.218:82/live/cctv3hd.m3u8
+#EXTINF:-1 tvg-id="CCTV4.cn" tvg-logo="https://tb.zbds.top/logo/CCTV4.png" group-title="央视",CCTV-4 中文国际
+http://74.91.26.218:82/live/cctv4hd.m3u8
+#EXTINF:-1 tvg-id="CCTV5.cn" tvg-logo="https://tb.zbds.top/logo/CCTV5.png" group-title="央视",CCTV-5 体育
+http://38.75.136.137:98/gslb/dsdqbv/cctv5hd.m3u8?auth=test20251009
+#EXTINF:-1 tvg-id="CCTV6.cn" tvg-logo="https://tb.zbds.top/logo/CCTV6.png" group-title="央视",CCTV-6 电影
+http://74.91.26.218:82/live/cctv6hd.m3u8
+#EXTINF:-1 tvg-id="CCTV7.cn" tvg-logo="https://tb.zbds.top/logo/CCTV7.png" group-title="央视",CCTV-7 国防军事
+http://74.91.26.218:82/live/cctv7hd.m3u8
+#EXTINF:-1 tvg-id="CCTV8.cn" tvg-logo="https://tb.zbds.top/logo/CCTV8.png" group-title="央视",CCTV-8 电视剧
+http://38.75.136.137:98/gslb/dsdqbv/cctv8hd.m3u8?auth=test20251009
+#EXTINF:-1 tvg-id="CCTV9.cn" tvg-logo="https://tb.zbds.top/logo/CCTV9.png" group-title="央视",CCTV-9 纪录
+http://74.91.26.218:82/live/cctv9hd.m3u8
+#EXTINF:-1 tvg-id="CCTV10.cn" tvg-logo="https://tb.zbds.top/logo/CCTV10.png" group-title="央视",CCTV-10 科教
+http://38.75.136.137:98/gslb/dsdqbv/cctv10hd.m3u8?auth=test20251009
+#EXTINF:-1 tvg-id="CCTV11.cn" tvg-logo="https://tb.zbds.top/logo/CCTV11.png" group-title="央视",CCTV-11 戏曲
+http://38.75.136.137:98/gslb/dsdqbv/cctv11hd.m3u8?auth=test20251009
+#EXTINF:-1 tvg-id="CCTV12.cn" tvg-logo="https://tb.zbds.top/logo/CCTV12.png" group-title="央视",CCTV-12 社会与法
+http://38.75.136.137:98/gslb/dsdqbv/cctv12hd.m3u8?auth=test20251009
+#EXTINF:-1 tvg-id="CCTV13.cn" tvg-logo="https://tb.zbds.top/logo/CCTV13.png" group-title="央视",CCTV-13 新闻
+http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8
+#EXTINF:-1 tvg-id="CCTV14.cn" tvg-logo="https://tb.zbds.top/logo/CCTV14.png" group-title="央视",CCTV-14 少儿
+http://74.91.26.218:82/live/cctv14hd.m3u8
+#EXTINF:-1 tvg-id="CCTV15.cn" tvg-logo="https://tb.zbds.top/logo/CCTV15.png" group-title="央视",CCTV-15 音乐
+http://74.91.26.218:82/live/cctv15hd.m3u8
+#EXTINF:-1 tvg-id="CCTV16.cn" tvg-logo="https://tb.zbds.top/logo/CCTV16.png" group-title="央视",CCTV-16 奥林匹克
+http://183.11.239.36:808/hls/169/index.m3u8
+#EXTINF:-1 tvg-id="CCTV17.cn" tvg-logo="https://tb.zbds.top/logo/CCTV17.png" group-title="央视",CCTV-17 农业农村
+https://iptv.catvod.com/live.php?id=CCTV17&line=5
+#EXTINF:-1 tvg-id="CCTV5+.cn" tvg-logo="https://tb.zbds.top/logo/CCTV5+.png" group-title="央视",CCTV-5+ 体育赛事
+http://cssbyd.imwork.net:8082/hls/6/index.m3u8
+
+# -------------------- 卫视 (Provincial Satellite HD) --------------------
+#EXTINF:-1 tvg-id="北京卫视.cn" tvg-logo="https://tb.zbds.top/logo/北京卫视.png" group-title="卫视",北京卫视
+http://satellitepull.cnr.cn/live/wxbtv/playlist.m3u8
+#EXTINF:-1 tvg-id="东方卫视.cn" tvg-logo="https://tb.zbds.top/logo/东方卫视.png" group-title="卫视",东方卫视
+http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
+#EXTINF:-1 tvg-id="湖南卫视.cn" tvg-logo="https://tb.zbds.top/logo/湖南卫视.png" group-title="卫视",湖南卫视
+https://iptv.catvod.com/live.php?id=%E6%B9%96%E5%8D%97%E5%8D%AB%E8%A7%86&line=1
+#EXTINF:-1 tvg-id="浙江卫视.cn" tvg-logo="https://tb.zbds.top/logo/浙江卫视.png" group-title="卫视",浙江卫视
+https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
+#EXTINF:-1 tvg-id="江苏卫视.cn" tvg-logo="https://tb.zbds.top/logo/江苏卫视.png" group-title="卫视",江苏卫视
+https://iptv.catvod.com/live.php?id=%E6%B1%9F%E8%8B%8F%E5%8D%AB%E8%A7%86&line=4
+#EXTINF:-1 tvg-id="广东卫视.cn" tvg-logo="https://tb.zbds.top/logo/广东卫视.png" group-title="卫视",广东卫视
+https://iptv.catvod.com/catvod.php?id=gdws
+#EXTINF:-1 tvg-id="深圳卫视.cn" tvg-logo="https://tb.zbds.top/logo/深圳卫视.png" group-title="卫视",深圳卫视
+https://iptv.catvod.com/catvod.php?id=szws
+#EXTINF:-1 tvg-id="山东卫视.cn" tvg-logo="https://tb.zbds.top/logo/山东卫视.png" group-title="卫视",山东卫视
+https://iptv.catvod.com/catvod.php?id=sdws
+#EXTINF:-1 tvg-id="安徽卫视.cn" tvg-logo="https://tb.zbds.top/logo/安徽卫视.png" group-title="卫视",安徽卫视
+https://iptv.catvod.com/catvod.php?id=ahws
+#EXTINF:-1 tvg-id="河南卫视.cn" tvg-logo="https://tb.zbds.top/logo/河南卫视.png" group-title="卫视",河南卫视
+https://iptv.catvod.com/catvod.php?id=hnws
+#EXTINF:-1 tvg-id="河北卫视.cn" tvg-logo="https://tb.zbds.top/logo/河北卫视.png" group-title="卫视",河北卫视
+https://iptv.catvod.com/catvod.php?id=hbws
+#EXTINF:-1 tvg-id="湖北卫视.cn" tvg-logo="https://tb.zbds.top/logo/湖北卫视.png" group-title="卫视",湖北卫视
+https://iptv.catvod.com/catvod.php?id=hubws
+#EXTINF:-1 tvg-id="四川卫视.cn" tvg-logo="https://tb.zbds.top/logo/四川卫视.png" group-title="卫视",四川卫视
+https://iptv.catvod.com/catvod.php?id=scws
+#EXTINF:-1 tvg-id="重庆卫视.cn" tvg-logo="https://tb.zbds.top/logo/重庆卫视.png" group-title="卫视",重庆卫视
+https://iptv.catvod.com/catvod.php?id=cqws
+#EXTINF:-1 tvg-id="天津卫视.cn" tvg-logo="https://tb.zbds.top/logo/天津卫视.png" group-title="卫视",天津卫视
+https://iptv.catvod.com/catvod.php?id=tjws
+#EXTINF:-1 tvg-id="辽宁卫视.cn" tvg-logo="https://tb.zbds.top/logo/辽宁卫视.png" group-title="卫视",辽宁卫视
+https://iptv.catvod.com/catvod.php?id=lnws
+#EXTINF:-1 tvg-id="黑龙江卫视.cn" tvg-logo="https://tb.zbds.top/logo/黑龙江卫视.png" group-title="卫视",黑龙江卫视
+https://iptv.catvod.com/catvod.php?id=hljws
+#EXTINF:-1 tvg-id="吉林卫视.cn" tvg-logo="https://tb.zbds.top/logo/吉林卫视.png" group-title="卫视",吉林卫视
+https://iptv.catvod.com/catvod.php?id=jlws
+#EXTINF:-1 tvg-id="陕西卫视.cn" tvg-logo="https://tb.zbds.top/logo/陕西卫视.png" group-title="卫视",陕西卫视
+https://iptv.catvod.com/catvod.php?id=sxws
+#EXTINF:-1 tvg-id="江西卫视.cn" tvg-logo="https://tb.zbds.top/logo/江西卫视.png" group-title="卫视",江西卫视
+https://iptv.catvod.com/catvod.php?id=jxws
+#EXTINF:-1 tvg-id="云南卫视.cn" tvg-logo="https://tb.zbds.top/logo/云南卫视.png" group-title="卫视",云南卫视
+https://iptv.catvod.com/catvod.php?id=ynws
+#EXTINF:-1 tvg-id="贵州卫视.cn" tvg-logo="https://tb.zbds.top/logo/贵州卫视.png" group-title="卫视",贵州卫视
+https://iptv.catvod.com/catvod.php?id=gzws
+#EXTINF:-1 tvg-id="广西卫视.cn" tvg-logo="https://tb.zbds.top/logo/广西卫视.png" group-title="卫视",广西卫视
+https://iptv.catvod.com/catvod.php?id=gxws
+#EXTINF:-1 tvg-id="海南卫视.cn" tvg-logo="https://tb.zbds.top/logo/海南卫视.png" group-title="卫视",海南卫视
+https://iptv.catvod.com/catvod.php?id=hinws
+#EXTINF:-1 tvg-id="新疆卫视.cn" tvg-logo="https://tb.zbds.top/logo/新疆卫视.png" group-title="卫视",新疆卫视
+https://iptv.catvod.com/catvod.php?id=xjws
+#EXTINF:-1 tvg-id="西藏卫视.cn" tvg-logo="https://tb.zbds.top/logo/西藏卫视.png" group-title="卫视",西藏卫视
+https://iptv.catvod.com/catvod.php?id=xzws
+
+# -------------------- 上海 (Shanghai) --------------------
+#EXTINF:-1 tvg-id="上海新闻综合.cn" tvg-logo="https://live.fanmingming.cn/tv/上海新闻综合.png" group-title="上海",上海新闻综合
+https://stream1.freetv.fun/ipv6-shang-hai-xin-wen-zong-he-3.m3u8
+#EXTINF:-1 tvg-id="东方影视.cn" tvg-logo="https://live.fanmingming.cn/tv/东方影视.png" group-title="上海",东方影视
+https://stream1.freetv.fun/dong-fang-ying-shi-8.m3u8
+#EXTINF:-1 tvg-id="上海都市.cn" tvg-logo="https://live.fanmingming.cn/tv/上海都市.png" group-title="上海",上海都市
+https://stream1.freetv.fun/ipv6-shang-hai-du-shi-2.m3u8
+#EXTINF:-1 tvg-id="第一财经.cn" tvg-logo="https://live.fanmingming.cn/tv/第一财经.png" group-title="上海",第一财经
+https://stream1.freetv.fun/ipv6-di-yi-cai-jing-4.m3u8
+#EXTINF:-1 tvg-id="东方财经.cn" tvg-logo="https://live.fanmingming.cn/tv/东方财经.png" group-title="上海",东方财经
+https://live.264788.xyz/channel/dongfangcaijing?streamid=82d4a4e6dd7add9e6d65efc2d7658b04&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+#EXTINF:-1 tvg-id="上海纪实.cn" tvg-logo="https://live.fanmingming.cn/tv/上海纪实.png" group-title="上海",上海纪实
+https://stream1.freetv.fun/shang-hai-ji-shi-ren-wen-1.m3u8
+#EXTINF:-1 tvg-id="上海外语.cn" tvg-logo="https://live.fanmingming.cn/tv/上海外语.png" group-title="上海",上海外语 (ICS)
+https://iptv.catvod.com/catvod.php?id=ics
+#EXTINF:-1 tvg-id="上海教育.cn" tvg-logo="https://live.fanmingming.cn/tv/上海教育.png" group-title="上海",上海教育
+https://live.264788.xyz/channel/shanghaijiaoyu?streamid=7929616b4ed4f0398125e35ab1172c4a&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+#EXTINF:-1 tvg-id="生活时尚.cn" tvg-logo="https://live.fanmingming.cn/tv/生活时尚.png" group-title="上海",生活时尚
+https://stream1.freetv.fun/sheng-huo-shi-shang-13.m3u8
+#EXTINF:-1 tvg-id="五星体育.cn" tvg-logo="https://live.fanmingming.cn/tv/五星体育.png" group-title="上海",五星体育
+https://stream1.freetv.fun/wu-xing-ti-yu-4.m3u8
+#EXTINF:-1 tvg-id="上海点掌财经.cn" tvg-logo="https://live.fanmingming.cn/tv/上海点掌财经.png" group-title="上海",上海点掌财经
+https://volcanopull.aniu.tv/live/aniu2/index.m3u8
+
 # -------------------- 香港 (Hong Kong) --------------------
-#EXTINF:-1 tvg-id="TVB.hk" tvg-logo="https://i.imgur.com/0pZ3Q6c.png" group-title="香港",TVB 翡翠台 (TVB Jade)
-https://stmv1.srvif.com/tvbjade/tvbjade/playlist.m3u8
+#EXTINF:-1 tvg-id="TVB.hk" group-title="香港",TVB 翡翠台 (TVB Jade)
+http://101.35.240.114:88/live.php?id=%E7%BF%A1%E7%BF%A0%E5%8F%B0
 #EXTINF:-1 tvg-id="TVBPearl.hk" group-title="香港",TVB 明珠台 (TVB Pearl)
-https://stmv1.srvif.com/tvbpearl/tvbpearl/playlist.m3u8
+http://php.jdshipin.com/TVOD/iptv.php?id=mzt
 #EXTINF:-1 tvg-id="iCableNews.hk" group-title="香港",有線新聞 (i-CABLE News)
-https://livednstxr.i-cable.com/Channel/news/playlist.m3u8
+https://iptv.catvod.com/catvod.php?id=icable
 #EXTINF:-1 tvg-id="NowNews.hk" group-title="香港",Now 新聞台
-https://d3goixb329rh4j.cloudfront.net/news/index.m3u8
+http://cdn.163189.xyz/163189/now
 #EXTINF:-1 tvg-id="RTHK31.hk" group-title="香港",港台電視 31 (RTHK 31)
 https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
 #EXTINF:-1 tvg-id="RTHK32.hk" group-title="香港",港台電視 32 (RTHK 32)
-https://rthktv32-live.akamaized.net/hls/live/2036819/RTHKTV32/master.m3u8
+https://iptv.catvod.com/catvod.php?id=rthk32
 #EXTINF:-1 tvg-id="HOYTV.hk" group-title="香港",HOY TV 開電視
-https://hoytv-live-stream.hoy.tv/ch77/index.m3u8
+http://php.jdshipin.com/TVOD/iptv.php?id=hoytv
 #EXTINF:-1 tvg-id="HOYInfo.hk" group-title="香港",HOY 資訊台
-https://hoytv-live-stream.hoy.tv/ch78/index.m3u8
+https://iptv.catvod.com/catvod.php?id=hoy78
 
 # -------------------- 台灣 (Taiwan) --------------------
 #EXTINF:-1 tvg-id="PTSHD.tw" group-title="台灣",公視 PTS HD
-https://pts-cd.cdn.hinet.net/livecdn/pts1ch.m3u8
+http://74.91.26.218:82/live/pts.m3u8
 #EXTINF:-1 tvg-id="PTS3.tw" group-title="台灣",公視 3 台
-https://pts-cd.cdn.hinet.net/livecdn/pts3ch.m3u8
+https://iptv.catvod.com/catvod.php?id=pts3
 #EXTINF:-1 tvg-id="HakkaTV.tw" group-title="台灣",客家電視台
-https://pts-cd.cdn.hinet.net/livecdn/hakkach.m3u8
+https://iptv.catvod.com/catvod.php?id=hakkatv
 #EXTINF:-1 tvg-id="TaiwanPlusNews.tw" group-title="台灣",TaiwanPlus News
-https://taiwanplus-live.akamaized.net/hls/live/2036115/TaiwanPlusNews/master.m3u8
+https://iptv.catvod.com/catvod.php?id=tplusnews
 #EXTINF:-1 tvg-id="TaiwanPlus.tw" group-title="台灣",TaiwanPlus
-https://bcovlive-a.akamaihd.net/rce33d845cb9e42dfa302c7ac345f7858/ap-northeast-1/6282251407001/playlist.m3u8
+https://iptv.catvod.com/catvod.php?id=tplus
 #EXTINF:-1 tvg-id="EBCNews.tw" group-title="台灣",東森新聞 (EBC News)
-https://ebcudplive.akamaized.net/pool_904/Live_1/ebcnews/index.m3u8
+http://38.64.72.148/hls/modn/list/2015/playlist.m3u8
 #EXTINF:-1 tvg-id="FTV.tw" group-title="台灣",民視新聞 (FTV News)
-https://ftvlivehls.ftv.com.tw/live8K/ftvnewsHigh.m3u8
+http://38.64.72.148/hls/modn/list/4012/playlist.m3u8
 #EXTINF:-1 tvg-id="SETNews.tw" group-title="台灣",三立新聞 (SET News)
-https://setn-live.cdn.hinet.net/live/setnews/playlist.m3u8
+https://stream1.freetv.fun/san-li-xin-wen-4.m3u8
 
 # -------------------- 美國 (USA) --------------------
 #EXTINF:-1 tvg-id="ABCNewsLive.us" group-title="美國",ABC News Live
-https://pb-0n3n2ej0w8pl9.akamaized.net/ABCNewsLive_Disney.m3u8
+https://abcnews-streams.akamaized.net/hls/live/2023561/abcnewshudson2/master_4000.m3u8
 #EXTINF:-1 tvg-id="CBSNews.us" group-title="美國",CBS News
 https://cbsn-us-vtt.cbsnstream.cbsnews.com/out/v1/ef868690d34144509eda696884bf1619/master.m3u8
 #EXTINF:-1 tvg-id="NBCNews.us" group-title="美國",NBC News NOW
@@ -82,27 +188,19 @@ https://abcnews-streams.akamaized.net/hls/live/2023561/abcnewshudson2/master_400
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp" group-title="日本",NHK World Japan
 https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
 #EXTINF:-1 tvg-id="NHKWorldPremium.jp" group-title="日本",NHK World Premium
-https://cdn.nhkworld.jp/www11/nhkworld-tv/pre/hlscomp.m3u8
-#EXTINF:-1 tvg-id="JapanetTakata.jp" group-title="日本",ジャパネットたかた (Japanet Takata)
-https://hls.japanet.tv/Live/Channel-01/master.m3u8
+https://iptv.catvod.com/catvod.php?id=nhkworldp
 #EXTINF:-1 tvg-id="FujiNewsNetwork.jp" group-title="日本",FNN Prime Online
-https://lpt.c.nmdn.net/ipbb/HLS_GHKaTV1_high/index.m3u8
+https://iptv.catvod.com/catvod.php?id=fnnprime
 #EXTINF:-1 tvg-id="TokyoMX.jp" group-title="日本",TOKYO MX
-https://mxlive.akamaized.net/hls/live/2003411/mxlive/index.m3u8
+https://iptv.catvod.com/catvod.php?id=tokyomx
 
-# -------------------- 日本動漫 (Anime) --------------------
-#EXTINF:-1 tvg-id="AnimeKuro.us" group-title="動漫",Anime Kuro (Plex)
-https://anime-kuro-plex.amagi.tv/playlist.m3u8
+# -------------------- 動漫 (Anime) --------------------
 #EXTINF:-1 tvg-id="AsianCrushAnime.us" group-title="動漫",AsianCrush Anime
 https://linear-900.frequency.stream/dist/cineverse/900/hls/master/playlist.m3u8
-#EXTINF:-1 tvg-id="RetroAnime.us" group-title="動漫",Retro Anime (Plex)
-https://retro-anime-plex.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="AnimeAllDay.us" group-title="動漫",Anime All Day (Plex)
 https://jmp2.uk/plu-5812b7d3249444e05d09cc49.m3u8
-#EXTINF:-1 tvg-id="DustX.us" group-title="動漫",Dust X (Sci-fi/Anime style)
+#EXTINF:-1 tvg-id="DustX.us" group-title="動漫",Dust X (Sci-fi/Anime)
 https://dqi7ayt2o24fn.cloudfront.net/playlist.m3u8
-#EXTINF:-1 tvg-id="ConTV.us" group-title="動漫",ConTV Anime
-https://contvanime-samsungus.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="MidnightPulpAnime.us" group-title="動漫",Midnight Pulp
 https://d18l78mi5ujmqr.cloudfront.net/playlist.m3u8
 
@@ -130,4 +228,4 @@ https://cdn4.skygo.mn/live/disk1/Arirang/HLSv3-FTA/Arirang.m3u8
 #EXTINF:-1 tvg-id="CGTNEnglish.cn" group-title="世界新聞",CGTN English
 https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
 #EXTINF:-1 tvg-id="RT.ru" group-title="世界新聞",RT News (English)
-https://op-group1-swiftservehd-1.dens.tv/h/h226/index.m3u8
+https://iptv.catvod.com/catvod.php?id=rt
